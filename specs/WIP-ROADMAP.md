@@ -17,8 +17,16 @@ custom theme, responsive shell, automated checks, and GitHub Pages workflow.
 
 ## Phase 2 — Game-data schema and fixtures
 
-Define validated, versioned entity schemas; record provenance and confidence;
-and add a deliberately small sample dataset. No formulas should be guessed.
+**Spec:** [`006-class-perk-data.md`](./006-class-perk-data.md)
+
+**Branch:** `feat/class-perk-data`
+
+**Status:** Research in progress
+
+Define validated, versioned class and perk schemas; record provenance and
+confidence; and add a deliberately small verified 1.0.3 dataset. Operatives,
+equipment, and unrelated game entities are deferred. No formulas should be
+guessed.
 
 ## Phase 3 — Calculation engine
 
