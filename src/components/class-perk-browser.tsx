@@ -67,7 +67,7 @@ export function ClassSelectionDialog({
               />
             </label>
 
-            <div className="class-options" role="list">
+            <div className="class-options">
               {matches.length ? (
                 matches.map((classRecord) => {
                   const selected = classRecord.id === selectedClassId;
