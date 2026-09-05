@@ -1,0 +1,7265 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "id": "qm-1-0-3-class-perk-catalog",
+    "gameVersion": "1.0.3",
+    "internalBuildId": "1.0.3.578s.024ad60",
+    "language": "en",
+    "capturedAt": "2026-09-05",
+    "coverage": {
+      "classes": 14,
+      "perks": 79
+    },
+    "source": {
+      "type": "game-config",
+      "asset": "Quasimorph_Data/resources.assets",
+      "records": ["config_mercenaries", "localization"],
+      "sha256": "8de90b24cdd608a3c14d4447d0e014315891783154644d22c29cb73806cde857",
+      "confidence": "verified"
+    }
+  },
+  "classes": [
+    {
+      "id": "scouts_of_hades",
+      "name": "Scouts of Hades",
+      "perkIds": [
+        "cqc_specialist",
+        "military_training",
+        "gear_maintenance",
+        "blind_fury",
+        "fire_transfer",
+        "assault_reflex"
+      ]
+    },
+    {
+      "id": "eclipse_blades",
+      "name": "Eclipse Blades",
+      "perkIds": [
+        "berserk_gang",
+        "athletics",
+        "reaction_training",
+        "cold_weapon_wielding",
+        "cannibalism",
+        "carnage"
+      ]
+    },
+    {
+      "id": "tifton_elite",
+      "name": "Tifton's Elite",
+      "perkIds": [
+        "heavy_weaponary",
+        "grenadier",
+        "selfhealing",
+        "stationary_defense",
+        "spray_and_pray",
+        "shock_awe"
+      ]
+    },
+    {
+      "id": "tunnel_rats",
+      "name": "Tunnel Rats",
+      "perkIds": [
+        "cautious",
+        "handmade_shotgun_ammo",
+        "marauder",
+        "dirty_shot",
+        "vicious_symbiosis",
+        "covermaster"
+      ]
+    },
+    {
+      "id": "phoenix_brigade",
+      "name": "Phoenix Brigade",
+      "perkIds": [
+        "shielding",
+        "battle_physicist",
+        "reinforced_battery",
+        "revealing_flame",
+        "cauterize",
+        "scholar"
+      ]
+    },
+    {
+      "id": "spaceborn_ghosts",
+      "name": "Spaceborn Ghosts",
+      "perkIds": [
+        "agent_training",
+        "muffled",
+        "lightweight_gear",
+        "cheap_shot",
+        "assault_reflex",
+        "war_crime"
+      ]
+    },
+    {
+      "id": "angels_of_spades",
+      "name": "Angels of Spades",
+      "perkIds": [
+        "sniper_training",
+        "enemy_anatomy",
+        "precise_shot",
+        "blind_shot",
+        "ghost_killer",
+        "enhanced_heavy_ammo"
+      ]
+    },
+    {
+      "id": "doppelganger_pack",
+      "name": "Terror Pack",
+      "perkIds": ["possession", "ritualism", "masochism", "fear_and_hunger", "insanity", "axe_rage"]
+    },
+    {
+      "id": "valkyrie_squad",
+      "name": "Valkyrie Squad",
+      "perkIds": [
+        "selfhealing",
+        "first_aid",
+        "medicus",
+        "duty_shift",
+        "therapist",
+        "pressure_points"
+      ]
+    },
+    {
+      "id": "martian_mech",
+      "name": "Martian Mech Inf",
+      "perkIds": [
+        "steel_without",
+        "steel_within",
+        "reactivation",
+        "devastation_tactic",
+        "terminator",
+        "heavy_weaponary"
+      ]
+    },
+    {
+      "id": "tongkong",
+      "name": "Tongkong",
+      "perkIds": [
+        "piersing_burst",
+        "pyromaniac",
+        "lizard",
+        "battle_concentration",
+        "last_bullet",
+        "death_over_chains"
+      ]
+    },
+    {
+      "id": "cobra",
+      "name": "Co.B.R.A.",
+      "perkIds": [
+        "bodybuilding",
+        "axe_rage",
+        "tomahawk",
+        "hidden_potential",
+        "cobra_throw",
+        "surgeon"
+      ]
+    },
+    {
+      "id": "unit_317",
+      "name": "Unit 317",
+      "perkIds": [
+        "cyber_compatibility",
+        "sandman",
+        "unconventional_munitions",
+        "tactical_camouflage",
+        "blurred_silhouette",
+        "cyberpsychosis"
+      ]
+    },
+    {
+      "id": "golem_group",
+      "name": "Golem Group",
+      "perkIds": [
+        "stationary_defense",
+        "central_command",
+        "krav_maga",
+        "recharge_on_reload",
+        "direct_channel",
+        "backward_compatibility"
+      ]
+    }
+  ],
+  "perks": [
+    {
+      "id": "agent_training",
+      "name": "Agent Training",
+      "kind": "passive",
+      "levelingAction": "ShotRangedWeapon",
+      "experiencePerAction": 2,
+      "weaponClasses": ["Pistol"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "agent_training_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FPistolAccuracy",
+              "value": 0.15
+            },
+            {
+              "id": "IAddedPistolRange",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "agent_training_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FPistolAccuracy",
+              "value": 0.2
+            },
+            {
+              "id": "IAddedPistolRange",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "agent_training_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FPistolAccuracy",
+              "value": 0.25
+            },
+            {
+              "id": "IAddedPistolRange",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "agent_training_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FPistolAccuracy",
+              "value": 0.3
+            },
+            {
+              "id": "IAddedPistolRange",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assault_reflex",
+      "name": "Assault Reflex",
+      "kind": "trigger",
+      "levelingAction": "EnemyAttackMissed",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "assault_reflex_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "assault_reflex_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 11
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "assault_reflex_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "assault_reflex_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "athletics",
+      "name": "Athletics",
+      "kind": "passive",
+      "levelingAction": "Run",
+      "experiencePerAction": 1,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "athletics_basic",
+          "experienceToNextLevel": 150,
+          "parameters": [
+            {
+              "id": "FSprintAccDebuff",
+              "value": -0.35
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "athletics_advanced",
+          "experienceToNextLevel": 350,
+          "parameters": [
+            {
+              "id": "FSprintAccDebuff",
+              "value": -0.5
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "athletics_master",
+          "experienceToNextLevel": 600,
+          "parameters": [
+            {
+              "id": "FSprintAccDebuff",
+              "value": -0.65
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "athletics_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FSprintAccDebuff",
+              "value": -0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "axe_rage",
+      "name": "Axe Rage",
+      "kind": "trigger",
+      "levelingAction": "OnMeleeWoundInflict",
+      "experiencePerAction": 5,
+      "weaponClasses": ["Axe", "Club", "Knife"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "axe_rage_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 7
+            },
+            {
+              "id": "IActivation",
+              "value": 25
+            },
+            {
+              "id": "IMultiHit",
+              "value": 3
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "axe_rage_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 6
+            },
+            {
+              "id": "IActivation",
+              "value": 25
+            },
+            {
+              "id": "IMultiHit",
+              "value": 3
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "axe_rage_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 5
+            },
+            {
+              "id": "IActivation",
+              "value": 25
+            },
+            {
+              "id": "IMultiHit",
+              "value": 3
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "axe_rage_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 4
+            },
+            {
+              "id": "IActivation",
+              "value": 25
+            },
+            {
+              "id": "IMultiHit",
+              "value": 3
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backward_compatibility",
+      "name": "Backward Compatibility",
+      "kind": "trigger",
+      "levelingAction": "OnAllyDeath",
+      "experiencePerAction": 50,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "backward_compatibility_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "FResists",
+              "value": 0.3
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "backward_compatibility_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "FResists",
+              "value": 0.35
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "backward_compatibility_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "FResists",
+              "value": 0.4
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "backward_compatibility_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "FResists",
+              "value": 0.45
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battle_concentration",
+      "name": "Combat Focus",
+      "kind": "trigger",
+      "levelingAction": "PlayerAttacked",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "battle_concentration_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDodge",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "battle_concentration_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDodge",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "battle_concentration_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 7
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDodge",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "battle_concentration_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 6
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDodge",
+              "value": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battle_physicist",
+      "name": "Combat Physicist",
+      "kind": "passive",
+      "levelingAction": "DisassembleBatteryGuns",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "battle_physicist_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FEnergySaving",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "battle_physicist_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FEnergySaving",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "battle_physicist_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FEnergySaving",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "battle_physicist_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FEnergySaving",
+              "value": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "berserk_gang",
+      "name": "Berserkgang",
+      "kind": "trigger",
+      "levelingAction": "ReceiveDamagingWound",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "berserk_gang_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 4
+            },
+            {
+              "id": "IPainRegen",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "berserk_gang_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 6
+            },
+            {
+              "id": "IPainRegen",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "berserk_gang_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 8
+            },
+            {
+              "id": "IPainRegen",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "berserk_gang_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 10
+            },
+            {
+              "id": "IPainRegen",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blind_fury",
+      "name": "Blind Fury",
+      "kind": "trigger",
+      "levelingAction": "PlayerHitted",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "blind_fury_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "blind_fury_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "blind_fury_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.65
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "blind_fury_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blind_shot",
+      "name": "Blind Shot",
+      "kind": "trigger",
+      "levelingAction": "OnRangedBlindHit",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "blind_shot_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 24
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "blind_shot_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 21
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "blind_shot_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 10
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "blind_shot_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 12
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blurred_silhouette",
+      "name": "Blurred Silhouette",
+      "kind": "trigger",
+      "levelingAction": "Run",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "blurred_silhouette_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 30
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDodge",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "blurred_silhouette_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 25
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDodge",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "blurred_silhouette_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDodge",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "blurred_silhouette_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDodge",
+              "value": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bodybuilding",
+      "name": "Bodybuilding",
+      "kind": "passive",
+      "levelingAction": "PlayerHitted",
+      "experiencePerAction": 1,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "bodybuilding_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IMaxHealth",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "bodybuilding_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IMaxHealth",
+              "value": 40
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "bodybuilding_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IMaxHealth",
+              "value": 60
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "bodybuilding_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IMaxHealth",
+              "value": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cannibalism",
+      "name": "Cannibalism",
+      "kind": "trigger",
+      "levelingAction": "EatRawHumanMeat",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cannibalism_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cannibalism_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cannibalism_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cannibalism_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carnage",
+      "name": "Carnage",
+      "kind": "trigger",
+      "levelingAction": "OnMeleeWoundInflict",
+      "experiencePerAction": 10,
+      "weaponClasses": ["Blade", "Knife", "Fist"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "carnage_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FRestoreAP",
+              "value": 0.7
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "carnage_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FRestoreAP",
+              "value": 0.85
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "carnage_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FRestoreAP",
+              "value": 0.85
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "carnage_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FRestoreAP",
+              "value": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cauterize",
+      "name": "Cauterize",
+      "kind": "trigger",
+      "levelingAction": "OnTakingBurn",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cauterize_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 7
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BBurnImmune",
+              "value": true
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cauterize_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 6
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BBurnImmune",
+              "value": true
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cauterize_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 5
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BBurnImmune",
+              "value": true
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cauterize_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 4
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BBurnImmune",
+              "value": true
+            },
+            {
+              "id": "IHealthRegen",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cautious",
+      "name": "Caution",
+      "kind": "trigger",
+      "levelingAction": "NoticeHiddenEnemy",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cautious_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 22
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.3
+            },
+            {
+              "id": "FCritDamage",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cautious_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.35
+            },
+            {
+              "id": "FCritDamage",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cautious_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 7
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.45
+            },
+            {
+              "id": "FCritDamage",
+              "value": 0.7
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cautious_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.5
+            },
+            {
+              "id": "FCritDamage",
+              "value": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "central_command",
+      "name": "Central Command",
+      "kind": "passive",
+      "levelingAction": "OnAllyHeal",
+      "experiencePerAction": 20,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "central_command_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IAllyAddedAP",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "central_command_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IAllyAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "central_command_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IAllyAddedAP",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "central_command_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IAllyAddedAP",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cheap_shot",
+      "name": "Sneaky Shot",
+      "kind": "trigger",
+      "levelingAction": "OnStealthAttack",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cheap_shot_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cheap_shot_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cheap_shot_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 10
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cheap_shot_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 12
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cobra_throw",
+      "name": "Cobra Throw",
+      "kind": "trigger",
+      "levelingAction": "AnyThrowKill",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cobra_throw_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "ICobraRadius",
+              "value": 2
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BCobraThrow",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cobra_throw_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "ICobraRadius",
+              "value": 2
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BCobraThrow",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cobra_throw_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "ICobraRadius",
+              "value": 3
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BCobraThrow",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cobra_throw_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "ICobraRadius",
+              "value": 4
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BCobraThrow",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cold_weapon_wielding",
+      "name": "Knife Fight",
+      "kind": "passive",
+      "levelingAction": "MeleeHitOnEnemy",
+      "experiencePerAction": 5,
+      "weaponClasses": ["Knife", "Blade", "Club", "Axe", "Fist"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cold_weapon_wielding_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FMeleeAccuracy",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cold_weapon_wielding_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FMeleeAccuracy",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cold_weapon_wielding_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FMeleeAccuracy",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cold_weapon_wielding_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FMeleeAccuracy",
+              "value": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "covermaster",
+      "name": "Shelters",
+      "kind": "passive",
+      "levelingAction": "EnemyAttackMissed",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "covermaster_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "ICoverOverallBonus",
+              "value": 15
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "covermaster_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "ICoverOverallBonus",
+              "value": 25
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "covermaster_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "ICoverOverallBonus",
+              "value": 35
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "covermaster_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "ICoverOverallBonus",
+              "value": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cqc_specialist",
+      "name": "CQC-specialist",
+      "kind": "passive",
+      "levelingAction": "ShotRangedWeapon",
+      "experiencePerAction": 2,
+      "weaponClasses": ["Smg", "Shotgun", "AssaultRifle"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cqc_specialist_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.25
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cqc_specialist_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.3
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cqc_specialist_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.35
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cqc_specialist_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.4
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber_compatibility",
+      "name": "Cyber Compatibility",
+      "kind": "passive",
+      "levelingAction": "EnemyAttackMissed",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cyber_compatibility_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FCyberCompDodge",
+              "value": 0.02
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cyber_compatibility_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FCyberCompDodge",
+              "value": 0.025
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cyber_compatibility_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FCyberCompDodge",
+              "value": 0.03
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cyber_compatibility_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FCyberCompDodge",
+              "value": 0.035
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyberpsychosis",
+      "name": "Cyberpsychosis",
+      "kind": "trigger",
+      "levelingAction": "ImplantActivation",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "cyberpsychosis_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "cyberpsychosis_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.7
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "cyberpsychosis_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 7
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.8
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "cyberpsychosis_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "death_over_chains",
+      "name": "Death over Chains",
+      "kind": "trigger",
+      "levelingAction": "ReceiveWound",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "death_over_chains_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 24
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "IAddedAP",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "death_over_chains_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 21
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "death_over_chains_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "death_over_chains_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "IAddedAP",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "devastation_tactic",
+      "name": "Devastation Tactic",
+      "kind": "passive",
+      "levelingAction": "ShotSuperHeavyAmmo",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "devastation_tactic_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FProjectileExplosionChance",
+              "value": 0.4
+            },
+            {
+              "id": "SProjectileExplosionId",
+              "value": "flak_low_explosion"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "devastation_tactic_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FProjectileExplosionChance",
+              "value": 0.55
+            },
+            {
+              "id": "SProjectileExplosionId",
+              "value": "flak_low_explosion"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "devastation_tactic_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FProjectileExplosionChance",
+              "value": 0.65
+            },
+            {
+              "id": "SProjectileExplosionId",
+              "value": "flak_low_explosion"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "devastation_tactic_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FProjectileExplosionChance",
+              "value": 0.8
+            },
+            {
+              "id": "SProjectileExplosionId",
+              "value": "flak_low_explosion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "direct_channel",
+      "name": "Direct Channel",
+      "kind": "trigger",
+      "levelingAction": "PlayerHitted",
+      "experiencePerAction": 20,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "direct_channel_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BDirectChannel",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "direct_channel_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BDirectChannel",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "direct_channel_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BDirectChannel",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "direct_channel_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "BDirectChannel",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dirty_shot",
+      "name": "Dirty Shot",
+      "kind": "trigger",
+      "levelingAction": "OnCrit",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "dirty_shot_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 6
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 1
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "dirty_shot_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 6
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 1
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "dirty_shot_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 6
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 2
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "dirty_shot_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 6
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 2
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duty_shift",
+      "name": "Duty Shift",
+      "kind": "trigger",
+      "levelingAction": "UsingAnyMeds",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "duty_shift_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 22
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FResists",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "duty_shift_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FResists",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "duty_shift_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FResists",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "duty_shift_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FResists",
+              "value": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enemy_anatomy",
+      "name": "Enemy Anatomy",
+      "kind": "passive",
+      "levelingAction": "OnPhysicalWoundInflict",
+      "experiencePerAction": 4,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "enemy_anatomy_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IPhysicalWoundAddedDamage",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "enemy_anatomy_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IPhysicalWoundAddedDamage",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "enemy_anatomy_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IPhysicalWoundAddedDamage",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "enemy_anatomy_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IPhysicalWoundAddedDamage",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enhanced_heavy_ammo",
+      "name": "Pocket Artillery",
+      "kind": "passive",
+      "levelingAction": "ShotHeavyAmmo",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "enhanced_heavy_ammo_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FHeavyAmmoDamage",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "enhanced_heavy_ammo_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FHeavyAmmoDamage",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "enhanced_heavy_ammo_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FHeavyAmmoDamage",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "enhanced_heavy_ammo_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FHeavyAmmoDamage",
+              "value": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fear_and_hunger",
+      "name": "Fear and Hunger",
+      "kind": "passive",
+      "levelingAction": "ReceiveStarvationDamage",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "fear_and_hunger_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FHungerDamageMult",
+              "value": 0.03
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "fear_and_hunger_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FHungerDamageMult",
+              "value": 0.04
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "fear_and_hunger_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FHungerDamageMult",
+              "value": 0.05
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "fear_and_hunger_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FHungerDamageMult",
+              "value": 0.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fire_transfer",
+      "name": "Fire Transfer",
+      "kind": "trigger",
+      "levelingAction": "AnyKill",
+      "experiencePerAction": 2,
+      "weaponClasses": ["Smg", "Shotgun", "AssaultRifle"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "fire_transfer_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 5
+            },
+            {
+              "id": "IActivation",
+              "value": 10
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.5
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "fire_transfer_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 4
+            },
+            {
+              "id": "IActivation",
+              "value": 10
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.55
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "fire_transfer_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 3
+            },
+            {
+              "id": "IActivation",
+              "value": 10
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.6
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "fire_transfer_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 2
+            },
+            {
+              "id": "IActivation",
+              "value": 10
+            },
+            {
+              "id": "FCritChance",
+              "value": 0.65
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first_aid",
+      "name": "First Aid",
+      "kind": "passive",
+      "levelingAction": "OnWoundFixate",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "first_aid_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FFixateAddedChance",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "first_aid_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FFixateAddedChance",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "first_aid_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FFixateAddedChance",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "first_aid_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FFixateAddedChance",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gear_maintenance",
+      "name": "Gear Maintenance",
+      "kind": "passive",
+      "levelingAction": "PhysicalDmgAbsorbedByResist",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "gear_maintenance_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FPhysicalResists",
+              "value": 0.15
+            },
+            {
+              "id": "FArmorDurability",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "gear_maintenance_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FPhysicalResists",
+              "value": 0.2
+            },
+            {
+              "id": "FArmorDurability",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "gear_maintenance_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FPhysicalResists",
+              "value": 0.25
+            },
+            {
+              "id": "FArmorDurability",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "gear_maintenance_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FPhysicalResists",
+              "value": 0.3
+            },
+            {
+              "id": "FArmorDurability",
+              "value": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghost_killer",
+      "name": "Ghost Killer",
+      "kind": "trigger",
+      "levelingAction": "AnyKill",
+      "experiencePerAction": 10,
+      "weaponClasses": ["MarksmanRifle"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "ghost_killer_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 100
+            },
+            {
+              "id": "IGGKRadius",
+              "value": 3
+            },
+            {
+              "id": "FGGKChance",
+              "value": 0.3
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BGhostKiller",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "ghost_killer_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 100
+            },
+            {
+              "id": "IGGKRadius",
+              "value": 3
+            },
+            {
+              "id": "FGGKChance",
+              "value": 0.4
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BGhostKiller",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "ghost_killer_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 100
+            },
+            {
+              "id": "IGGKRadius",
+              "value": 4
+            },
+            {
+              "id": "FGGKChance",
+              "value": 0.4
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BGhostKiller",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "ghost_killer_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 100
+            },
+            {
+              "id": "IGGKRadius",
+              "value": 4
+            },
+            {
+              "id": "FGGKChance",
+              "value": 0.5
+            },
+            {
+              "id": "BActionPointDuration",
+              "value": true
+            },
+            {
+              "id": "BGhostKiller",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grenadier",
+      "name": "Grenadier",
+      "kind": "passive",
+      "levelingAction": "ThrowGrenade",
+      "experiencePerAction": 25,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "grenadier_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FGrenadeDamage",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "grenadier_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FGrenadeDamage",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "grenadier_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FGrenadeDamage",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "grenadier_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FGrenadeDamage",
+              "value": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handmade_shotgun_ammo",
+      "name": "Reinforced Ammo",
+      "kind": "passive",
+      "levelingAction": "ShotShellsAmmo",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "handmade_shotgun_ammo_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FShellAmmoDamage",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "handmade_shotgun_ammo_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FShellAmmoDamage",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "handmade_shotgun_ammo_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FShellAmmoDamage",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "handmade_shotgun_ammo_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FShellAmmoDamage",
+              "value": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heavy_weaponary",
+      "name": "Heavy Weapon",
+      "kind": "passive",
+      "levelingAction": "ShotRangedWeapon",
+      "experiencePerAction": 2,
+      "weaponClasses": [
+        "AssaultRifle",
+        "Machinegun",
+        "Minigun",
+        "GrenadeLauncher",
+        "RocketLauncher"
+      ],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "heavy_weaponary_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.25
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "heavy_weaponary_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.3
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "heavy_weaponary_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.35
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "heavy_weaponary_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FScatter",
+              "value": -0.4
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hidden_potential",
+      "name": "Second Wind",
+      "kind": "trigger",
+      "levelingAction": "HealthBelow20Percent",
+      "experiencePerAction": 50,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "hidden_potential_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 200
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "hidden_potential_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 150
+            },
+            {
+              "id": "IAddedAP",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "hidden_potential_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 100
+            },
+            {
+              "id": "IAddedAP",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "hidden_potential_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 0
+            },
+            {
+              "id": "IAddedAP",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insanity",
+      "name": "Insanity",
+      "kind": "passive",
+      "levelingAction": "OnQmorphStageChanged",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "insanity_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FAffectedQuasimorph",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "insanity_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FAffectedQuasimorph",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "insanity_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FAffectedQuasimorph",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "insanity_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FAffectedQuasimorph",
+              "value": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "krav_maga",
+      "name": "Krav Maga",
+      "kind": "passive",
+      "levelingAction": "OnBarehandHit",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "krav_maga_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FBarehandCritChance",
+              "value": 0.15
+            },
+            {
+              "id": "FBarehandCritDmg",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "krav_maga_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FBarehandCritChance",
+              "value": 0.2
+            },
+            {
+              "id": "FBarehandCritDmg",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "krav_maga_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FBarehandCritChance",
+              "value": 0.25
+            },
+            {
+              "id": "FBarehandCritDmg",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "krav_maga_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FBarehandCritChance",
+              "value": 0.3
+            },
+            {
+              "id": "FBarehandCritDmg",
+              "value": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "last_bullet",
+      "name": "Last Bullet",
+      "kind": "trigger",
+      "levelingAction": "ShotLastBullet",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "last_bullet_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDamage",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "last_bullet_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDamage",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "last_bullet_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDamage",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "last_bullet_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "FDamage",
+              "value": 0.65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lightweight_gear",
+      "name": "Lightweight Gear",
+      "kind": "passive",
+      "levelingAction": "WeightStealth",
+      "experiencePerAction": 1,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "lightweight_gear_basic",
+          "experienceToNextLevel": 150,
+          "parameters": [
+            {
+              "id": "FEquipmentWeight",
+              "value": -0.25
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "lightweight_gear_advanced",
+          "experienceToNextLevel": 300,
+          "parameters": [
+            {
+              "id": "FEquipmentWeight",
+              "value": -0.35
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "lightweight_gear_master",
+          "experienceToNextLevel": 500,
+          "parameters": [
+            {
+              "id": "FEquipmentWeight",
+              "value": -0.45
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "lightweight_gear_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FEquipmentWeight",
+              "value": -0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lizard",
+      "name": "Lizard",
+      "kind": "passive",
+      "levelingAction": "PlayerHitted",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "lizard_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FMaxPainThreshold",
+              "value": 0.3
+            },
+            {
+              "id": "IPainRegen",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "lizard_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FMaxPainThreshold",
+              "value": 0.4
+            },
+            {
+              "id": "IPainRegen",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "lizard_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FMaxPainThreshold",
+              "value": 0.4
+            },
+            {
+              "id": "IPainRegen",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "lizard_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FMaxPainThreshold",
+              "value": 0.5
+            },
+            {
+              "id": "IPainRegen",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marauder",
+      "name": "Marauder",
+      "kind": "passive",
+      "levelingAction": "LootUniqCorpse",
+      "experiencePerAction": 1,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "marauder_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FLootCorpseItem",
+              "value": 0.3
+            },
+            {
+              "id": "FLootStorageItem",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "marauder_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FLootCorpseItem",
+              "value": 0.6
+            },
+            {
+              "id": "FLootStorageItem",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "marauder_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FLootCorpseItem",
+              "value": 0.9
+            },
+            {
+              "id": "FLootStorageItem",
+              "value": 0.9
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "marauder_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FLootCorpseItem",
+              "value": 1.2
+            },
+            {
+              "id": "FLootStorageItem",
+              "value": 1.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "masochism",
+      "name": "Masochism",
+      "kind": "trigger",
+      "levelingAction": "OnPainLimitBreak",
+      "experiencePerAction": 25,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "masochism_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "masochism_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "masochism_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "masochism_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IAddedAP",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medicus",
+      "name": "Medicus",
+      "kind": "passive",
+      "levelingAction": "OnMedicalCraft",
+      "experiencePerAction": 1,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "medicus_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IMedicalCraft",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "medicus_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IMedicalCraft",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "medicus_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IMedicalCraft",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "medicus_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IMedicalCraft",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military_training",
+      "name": "Training",
+      "kind": "passive",
+      "levelingAction": "WeightMove",
+      "experiencePerAction": 1,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "military_training_basic",
+          "experienceToNextLevel": 200,
+          "parameters": [
+            {
+              "id": "IStarvStanceBonus",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "military_training_advanced",
+          "experienceToNextLevel": 500,
+          "parameters": [
+            {
+              "id": "IStarvStanceBonus",
+              "value": -3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "military_training_master",
+          "experienceToNextLevel": 800,
+          "parameters": [
+            {
+              "id": "IStarvStanceBonus",
+              "value": -4
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "military_training_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IStarvStanceBonus",
+              "value": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "muffled",
+      "name": "Muffled",
+      "kind": "passive",
+      "levelingAction": "IdleKill",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "muffled_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FNoiseSuppression",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "muffled_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FNoiseSuppression",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "muffled_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FNoiseSuppression",
+              "value": 0.7
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "muffled_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FNoiseSuppression",
+              "value": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piersing_burst",
+      "name": "Heavy Fire",
+      "kind": "passive",
+      "levelingAction": "ShotRangedWeapon",
+      "experiencePerAction": 2,
+      "weaponClasses": ["Smg", "AssaultRifle"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "piersing_burst_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FPierce",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "piersing_burst_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FPierce",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "piersing_burst_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FPierce",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "piersing_burst_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FPierce",
+              "value": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "possession",
+      "name": "Possession",
+      "kind": "passive",
+      "levelingAction": "UltimateActivation",
+      "experiencePerAction": 25,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "possession_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FPactCooldown",
+              "value": 0.3
+            },
+            {
+              "id": "FPactDebuff",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "possession_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FPactCooldown",
+              "value": 0.4
+            },
+            {
+              "id": "FPactDebuff",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "possession_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FPactCooldown",
+              "value": 0.5
+            },
+            {
+              "id": "FPactDebuff",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "possession_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FPactCooldown",
+              "value": 0.6
+            },
+            {
+              "id": "FPactDebuff",
+              "value": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "precise_shot",
+      "name": "Precise Shot",
+      "kind": "trigger",
+      "levelingAction": "SkipTurnStealth",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "precise_shot_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 5
+            },
+            {
+              "id": "IActivation",
+              "value": 10
+            },
+            {
+              "id": "FRangeCritChance",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "precise_shot_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 4
+            },
+            {
+              "id": "IActivation",
+              "value": 10
+            },
+            {
+              "id": "FRangeCritChance",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "precise_shot_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 3
+            },
+            {
+              "id": "IActivation",
+              "value": 10
+            },
+            {
+              "id": "FRangeCritChance",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "precise_shot_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 2
+            },
+            {
+              "id": "IActivation",
+              "value": 0
+            },
+            {
+              "id": "FRangeCritChance",
+              "value": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pressure_points",
+      "name": "Pressure Points",
+      "kind": "passive",
+      "levelingAction": "ShotRangedWeapon",
+      "experiencePerAction": 2,
+      "weaponClasses": ["Pistol", "Smg", "Shotgun"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "pressure_points_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FPainDamageMult",
+              "value": 0.5
+            },
+            {
+              "id": "IPainExtraAPSkip",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "pressure_points_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FPainDamageMult",
+              "value": 0.7
+            },
+            {
+              "id": "IPainExtraAPSkip",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "pressure_points_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FPainDamageMult",
+              "value": 0.9
+            },
+            {
+              "id": "IPainExtraAPSkip",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "pressure_points_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FPainDamageMult",
+              "value": 0.9
+            },
+            {
+              "id": "IPainExtraAPSkip",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyromaniac",
+      "name": "Pyromaniac",
+      "kind": "passive",
+      "levelingAction": "PutFireOnEnemy",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "pyromaniac_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IFireDuration",
+              "value": 2
+            },
+            {
+              "id": "FBurnChanceBonus",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "pyromaniac_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IFireDuration",
+              "value": 2
+            },
+            {
+              "id": "FBurnChanceBonus",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "pyromaniac_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IFireDuration",
+              "value": 4
+            },
+            {
+              "id": "FBurnChanceBonus",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "pyromaniac_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IFireDuration",
+              "value": 4
+            },
+            {
+              "id": "FBurnChanceBonus",
+              "value": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reaction_training",
+      "name": "Combat Reflexes",
+      "kind": "passive",
+      "levelingAction": "EnemyAttackMissed",
+      "experiencePerAction": 4,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "reaction_training_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FDodge",
+              "value": 0.1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "reaction_training_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FDodge",
+              "value": 0.14
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "reaction_training_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FDodge",
+              "value": 0.18
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "reaction_training_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FDodge",
+              "value": 0.22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reactivation",
+      "name": "Reactivation",
+      "kind": "trigger",
+      "levelingAction": "ReceiveWound",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "reactivation_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IImplantRecovery",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "reactivation_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IImplantRecovery",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "reactivation_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IImplantRecovery",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "reactivation_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IImplantRecovery",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recharge_on_reload",
+      "name": "Recharging",
+      "kind": "trigger",
+      "levelingAction": "OnWeaponReload",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "recharge_on_reload_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "IAllyRegen",
+              "value": 6
+            },
+            {
+              "id": "IAllyRegenDuration",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "recharge_on_reload_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "IAllyRegen",
+              "value": 8
+            },
+            {
+              "id": "IAllyRegenDuration",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "recharge_on_reload_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "IAllyRegen",
+              "value": 8
+            },
+            {
+              "id": "IAllyRegenDuration",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "recharge_on_reload_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 60
+            },
+            {
+              "id": "IAllyRegen",
+              "value": 10
+            },
+            {
+              "id": "IAllyRegenDuration",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reinforced_battery",
+      "name": "Overcharged Batteries",
+      "kind": "passive",
+      "levelingAction": "OnAttackWithBatteryAmmo",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "reinforced_battery_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FBatteryAmmoDamage",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "reinforced_battery_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FBatteryAmmoDamage",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "reinforced_battery_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FBatteryAmmoDamage",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "reinforced_battery_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FBatteryAmmoDamage",
+              "value": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "revealing_flame",
+      "name": "Flame in the Dark",
+      "kind": "trigger",
+      "levelingAction": "PutFireOnEnemy",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "revealing_flame_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IRevealRange",
+              "value": 4
+            },
+            {
+              "id": "BRevealingSignal",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "revealing_flame_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IRevealRange",
+              "value": 5
+            },
+            {
+              "id": "BRevealingSignal",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "revealing_flame_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IRevealRange",
+              "value": 6
+            },
+            {
+              "id": "BRevealingSignal",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "revealing_flame_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IRevealRange",
+              "value": 7
+            },
+            {
+              "id": "BRevealingSignal",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ritualism",
+      "name": "Ritualism",
+      "kind": "trigger",
+      "levelingAction": "UseRitualItem",
+      "experiencePerAction": 20,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "ritualism_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "ritualism_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "ritualism_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "ritualism_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 4
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "ICDRecovery",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sandman",
+      "name": "Sandman",
+      "kind": "passive",
+      "levelingAction": "IdleKill",
+      "experiencePerAction": 15,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "sandman_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FSandmanScatter",
+              "value": -0.4
+            },
+            {
+              "id": "FSandmanFalloff",
+              "value": -0.04
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "sandman_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FSandmanScatter",
+              "value": -0.5
+            },
+            {
+              "id": "FSandmanFalloff",
+              "value": -0.06
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "sandman_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FSandmanScatter",
+              "value": -0.6
+            },
+            {
+              "id": "FSandmanFalloff",
+              "value": -0.08
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "sandman_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FSandmanScatter",
+              "value": -0.7
+            },
+            {
+              "id": "FSandmanFalloff",
+              "value": -0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scholar",
+      "name": "Scholar",
+      "kind": "passive",
+      "levelingAction": "OnProductionCraft",
+      "experiencePerAction": 1,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "scholar_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IScholarCraft",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "scholar_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IScholarCraft",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "scholar_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IScholarCraft",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "scholar_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IScholarCraft",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "selfhealing",
+      "name": "Self-healing",
+      "kind": "trigger",
+      "levelingAction": "ReceiveHumanWound",
+      "experiencePerAction": 15,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "selfhealing_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 25
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllHumanWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateHumanAddedChance",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "selfhealing_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllHumanWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateHumanAddedChance",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "selfhealing_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllHumanWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateHumanAddedChance",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "selfhealing_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllHumanWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateHumanAddedChance",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shielding",
+      "name": "Shielding",
+      "kind": "passive",
+      "levelingAction": "ElementalDmgAbsorbedByResist",
+      "experiencePerAction": 4,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "shielding_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FElementalResists",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "shielding_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FElementalResists",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "shielding_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FElementalResists",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "shielding_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FElementalResists",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shock_awe",
+      "name": "Shock and Awe",
+      "kind": "trigger",
+      "levelingAction": "ExplosionHitOnEnemy",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "shock_awe_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FExplStunChance",
+              "value": 0.5
+            },
+            {
+              "id": "IExplStunDuration",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "shock_awe_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FExplStunChance",
+              "value": 0.6
+            },
+            {
+              "id": "IExplStunDuration",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "shock_awe_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FExplStunChance",
+              "value": 0.6
+            },
+            {
+              "id": "IExplStunDuration",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "shock_awe_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FExplStunChance",
+              "value": 0.7
+            },
+            {
+              "id": "IExplStunDuration",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sniper_training",
+      "name": "Sniper Training",
+      "kind": "passive",
+      "levelingAction": "ShotRangedWeapon",
+      "experiencePerAction": 2,
+      "weaponClasses": ["MarksmanRifle"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "sniper_training_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FMarksmanAccuracy",
+              "value": 0.15
+            },
+            {
+              "id": "IOpticalRange",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "sniper_training_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FMarksmanAccuracy",
+              "value": 0.2
+            },
+            {
+              "id": "IOpticalRange",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "sniper_training_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FMarksmanAccuracy",
+              "value": 0.25
+            },
+            {
+              "id": "IOpticalRange",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "sniper_training_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FMarksmanAccuracy",
+              "value": 0.3
+            },
+            {
+              "id": "IOpticalRange",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spray_and_pray",
+      "name": "Spray and Pray",
+      "kind": "trigger",
+      "levelingAction": "AmmoBelow20Percent",
+      "experiencePerAction": 40,
+      "weaponClasses": ["AssaultRifle", "Machinegun", "Minigun"],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "spray_and_pray_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 16
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.3
+            },
+            {
+              "id": "FPierce",
+              "value": 0.15
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "spray_and_pray_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.4
+            },
+            {
+              "id": "FPierce",
+              "value": 0.2
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "spray_and_pray_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.5
+            },
+            {
+              "id": "FPierce",
+              "value": 0.25
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "spray_and_pray_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 5
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "FDamage",
+              "value": 0.6
+            },
+            {
+              "id": "FPierce",
+              "value": 0.3
+            },
+            {
+              "id": "FRangeAccuracy",
+              "value": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stationary_defense",
+      "name": "Stationary Defense",
+      "kind": "passive",
+      "levelingAction": "PlaceTurret",
+      "experiencePerAction": 50,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "stationary_defense_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FTurretDamage",
+              "value": 0.25
+            },
+            {
+              "id": "ITurretHealth",
+              "value": 25
+            },
+            {
+              "id": "IPlacementRange",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "stationary_defense_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FTurretDamage",
+              "value": 0.3
+            },
+            {
+              "id": "ITurretHealth",
+              "value": 30
+            },
+            {
+              "id": "IPlacementRange",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "stationary_defense_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FTurretDamage",
+              "value": 0.35
+            },
+            {
+              "id": "ITurretHealth",
+              "value": 35
+            },
+            {
+              "id": "IPlacementRange",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "stationary_defense_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FTurretDamage",
+              "value": 0.4
+            },
+            {
+              "id": "ITurretHealth",
+              "value": 40
+            },
+            {
+              "id": "IPlacementRange",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steel_within",
+      "name": "Steel Within",
+      "kind": "trigger",
+      "levelingAction": "ReceiveCyborgWound",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "steel_within_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllCyborgWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateCyborgAddedChance",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "steel_within_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 15
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllCyborgWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateCyborgAddedChance",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "steel_within_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllCyborgWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateCyborgAddedChance",
+              "value": 0.65
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "steel_within_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 9
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "BFixAllCyborgWounds",
+              "value": true
+            },
+            {
+              "id": "FFixateCyborgAddedChance",
+              "value": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steel_without",
+      "name": "Steel Without",
+      "kind": "passive",
+      "levelingAction": "OnCyborgWoundFixate",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "steel_without_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FAugResistBonusMult",
+              "value": 0.35
+            },
+            {
+              "id": "FAugResistDebuffMult",
+              "value": -0.5
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "steel_without_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FAugResistBonusMult",
+              "value": 0.4
+            },
+            {
+              "id": "FAugResistDebuffMult",
+              "value": -0.6
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "steel_without_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FAugResistBonusMult",
+              "value": 0.45
+            },
+            {
+              "id": "FAugResistDebuffMult",
+              "value": -0.7
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "steel_without_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FAugResistBonusMult",
+              "value": 0.5
+            },
+            {
+              "id": "FAugResistDebuffMult",
+              "value": -0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "surgeon",
+      "name": "Dismantler",
+      "kind": "trigger",
+      "levelingAction": "OnWoundInflict",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "surgeon_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 6
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDamage",
+              "value": 0.1
+            },
+            {
+              "id": "FAccuracyBonus",
+              "value": 0.25
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "surgeon_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 8
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDamage",
+              "value": 0.15
+            },
+            {
+              "id": "FAccuracyBonus",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "surgeon_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 10
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDamage",
+              "value": 0.2
+            },
+            {
+              "id": "FAccuracyBonus",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "surgeon_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 12
+            },
+            {
+              "id": "ICooldown",
+              "value": 18
+            },
+            {
+              "id": "IActivation",
+              "value": 120
+            },
+            {
+              "id": "FDamage",
+              "value": 0.25
+            },
+            {
+              "id": "FAccuracyBonus",
+              "value": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tactical_camouflage",
+      "name": "Tactical Camouflage",
+      "kind": "trigger",
+      "levelingAction": "OnEnemyAlert",
+      "experiencePerAction": 25,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "tactical_camouflage_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 40
+            },
+            {
+              "id": "IActivation",
+              "value": 200
+            },
+            {
+              "id": "BTacticalCamo",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "tactical_camouflage_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 30
+            },
+            {
+              "id": "IActivation",
+              "value": 150
+            },
+            {
+              "id": "BTacticalCamo",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "tactical_camouflage_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 30
+            },
+            {
+              "id": "IActivation",
+              "value": 150
+            },
+            {
+              "id": "BTacticalCamo",
+              "value": true
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "tactical_camouflage_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 3
+            },
+            {
+              "id": "ICooldown",
+              "value": 20
+            },
+            {
+              "id": "IActivation",
+              "value": 100
+            },
+            {
+              "id": "BTacticalCamo",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terminator",
+      "name": "Terminator",
+      "kind": "trigger",
+      "levelingAction": "AnyKill",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "terminator_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 14
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IReloadTime",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "terminator_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 12
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IReloadTime",
+              "value": -3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "terminator_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IReloadTime",
+              "value": -4
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "terminator_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 2
+            },
+            {
+              "id": "ICooldown",
+              "value": 8
+            },
+            {
+              "id": "IActivation",
+              "value": 40
+            },
+            {
+              "id": "IReloadTime",
+              "value": -5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "therapist",
+      "name": "Therapist",
+      "kind": "passive",
+      "levelingAction": "HitWithStatusEffect",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "therapist_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FDamageStatusMult",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "therapist_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FDamageStatusMult",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "therapist_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FDamageStatusMult",
+              "value": 0.65
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "therapist_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FDamageStatusMult",
+              "value": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tomahawk",
+      "name": "Tomahawk",
+      "kind": "passive",
+      "levelingAction": "ThrowMeleeWeapon",
+      "experiencePerAction": 10,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "tomahawk_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FThrowCritChance",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "tomahawk_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FThrowCritChance",
+              "value": 0.4
+            },
+            {
+              "id": "IThrowRangeBonus",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "tomahawk_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FThrowCritChance",
+              "value": 0.5
+            },
+            {
+              "id": "IThrowRangeBonus",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "tomahawk_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FThrowCritChance",
+              "value": 0.6
+            },
+            {
+              "id": "IThrowRangeBonus",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unconventional_munitions",
+      "name": "Unconventional Ammo",
+      "kind": "passive",
+      "levelingAction": "Shot9mm42Ammo",
+      "experiencePerAction": 2,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "unconventional_munitions_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "F9mm42AmmoDamage",
+              "value": 0.2
+            },
+            {
+              "id": "F9mm42WoundChance",
+              "value": 0.2
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "unconventional_munitions_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "F9mm42AmmoDamage",
+              "value": 0.25
+            },
+            {
+              "id": "F9mm42WoundChance",
+              "value": 0.3
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "unconventional_munitions_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "F9mm42AmmoDamage",
+              "value": 0.3
+            },
+            {
+              "id": "F9mm42WoundChance",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "unconventional_munitions_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "F9mm42AmmoDamage",
+              "value": 0.35
+            },
+            {
+              "id": "F9mm42WoundChance",
+              "value": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vicious_symbiosis",
+      "name": "Vicious Symbiosis",
+      "kind": "passive",
+      "levelingAction": "ReceiveAddiction",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "vicious_symbiosis_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "FSymbiosisDamage",
+              "value": 0.09
+            },
+            {
+              "id": "FSymbiosisResists",
+              "value": 0.09
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "vicious_symbiosis_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "FSymbiosisDamage",
+              "value": 0.12
+            },
+            {
+              "id": "FSymbiosisResists",
+              "value": 0.12
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "vicious_symbiosis_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "FSymbiosisDamage",
+              "value": 0.15
+            },
+            {
+              "id": "FSymbiosisResists",
+              "value": 0.15
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "vicious_symbiosis_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "FSymbiosisDamage",
+              "value": 0.18
+            },
+            {
+              "id": "FSymbiosisResists",
+              "value": 0.18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war_crime",
+      "name": "War Crime",
+      "kind": "trigger",
+      "levelingAction": "AnyKill",
+      "experiencePerAction": 5,
+      "weaponClasses": [],
+      "weaponSubclasses": [],
+      "levels": [
+        {
+          "level": 1,
+          "grade": "basic",
+          "sourceId": "war_crime_basic",
+          "experienceToNextLevel": 100,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 1
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "grade": "advanced",
+          "sourceId": "war_crime_advanced",
+          "experienceToNextLevel": 250,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 1
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "grade": "master",
+          "sourceId": "war_crime_master",
+          "experienceToNextLevel": 400,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 1
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "grade": "legend",
+          "sourceId": "war_crime_legend",
+          "experienceToNextLevel": null,
+          "parameters": [
+            {
+              "id": "IDuration",
+              "value": 1
+            },
+            {
+              "id": "ICooldown",
+              "value": 10
+            },
+            {
+              "id": "IActivation",
+              "value": 80
+            },
+            {
+              "id": "IEnemyStunDuration",
+              "value": 1
+            },
+            {
+              "id": "IEnemyCount",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -112,8 +112,25 @@ version evidence, source hierarchy, and unresolved verification work.
 - Placeholder records are unmistakably labeled synthetic in data and UI.
 - No placeholder record can claim verified evidence.
 
-## Blocking research
+## Verified inventory extraction
 
-Replacing placeholder records with stable 1.0.3 data is intentionally deferred
-to a separate PR. That work requires stable game records or complete in-game
-screens and must retain provenance for every gameplay value.
+The stable 1.0.3 installation provides `config_mercenaries` and `localization`
+records inside `Quasimorph_Data/resources.assets`. The inventory extraction is
+kept separate from the calculation-ready dataset because source parameter names
+are not, by themselves, proof of calculation semantics.
+
+### Inventory acceptance criteria
+
+- The catalog records every configured mercenary class and every class perk.
+- Each class retains its six ordered source perk references.
+- Each perk retains its source ID, English name, passive/trigger type, leveling
+  action, experience values, weapon limits, four explicit grades, and raw typed
+  parameters.
+- Runtime validation rejects duplicates, unresolved references, malformed grade
+  chains, and incorrect coverage counts.
+- The manifest records the public version, internal build ID, source asset hash,
+  embedded record names, capture date, and confidence.
+- Extraction is reproducible from an ignored local installation, and no file
+  under `local-game-files/` is committed.
+- Raw parameter values are not promoted to calculator modifiers until their
+  code behavior has been independently mapped and tested.
