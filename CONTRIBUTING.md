@@ -67,4 +67,3 @@ A pull request should:
 - include screenshots for material interface changes.
 
 Prefer reviewable vertical slices over large batches of unrelated work.
-
