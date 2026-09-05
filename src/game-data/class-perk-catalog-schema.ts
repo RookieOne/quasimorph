@@ -4,6 +4,7 @@ const sourceIdSchema = z
   .string()
   .min(1)
   .regex(/^[a-z0-9_]+$/);
+const expectedGrades = ['basic', 'advanced', 'master', 'legend'] as const;
 
 const parameterSchema = z.object({
   id: z
@@ -83,7 +84,11 @@ export const classPerkCatalogSchema = z
 
     catalog.perks.forEach((perk, perkIndex) => {
       perk.levels.forEach((level, levelIndex) => {
-        if (level.level !== levelIndex + 1 || level.sourceId !== `${perk.id}_${level.grade}`) {
+        if (
+          level.level !== levelIndex + 1 ||
+          level.grade !== expectedGrades[levelIndex] ||
+          level.sourceId !== `${perk.id}_${level.grade}`
+        ) {
           context.addIssue({
             code: 'custom',
             message: `Invalid level chain for perk ${perk.id}`,

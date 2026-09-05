@@ -35,6 +35,14 @@ describe('verified class and perk catalog', () => {
     expect(() => parseClassPerkCatalog(invalid)).toThrow(/Invalid level chain/);
   });
 
+  it('rejects a mislabeled grade', () => {
+    const invalid = structuredClone(classPerkCatalog);
+    invalid.perks[0].levels[0].grade = 'legend';
+    invalid.perks[0].levels[0].sourceId = `${invalid.perks[0].id}_legend`;
+
+    expect(() => parseClassPerkCatalog(invalid)).toThrow(/Invalid level chain/);
+  });
+
   it('rejects a non-final level without a progression threshold', () => {
     const invalid = structuredClone(classPerkCatalog);
     invalid.perks[0].levels[1].experienceToNextLevel = null;
