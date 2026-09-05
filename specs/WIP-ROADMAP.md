@@ -29,6 +29,18 @@ class/perk inventory. Mapping source parameters to calculation semantics is
 deferred so no formulas are guessed. Operatives, equipment, and unrelated game
 entities remain out of scope.
 
+## Phase 2.5 — Verified class and perk browser
+
+**Spec:** [`007-verified-class-perk-browser.md`](./007-verified-class-perk-browser.md)
+
+**Branch:** `feat/verified-class-perk-browser`
+
+**Status:** Complete
+
+Connect the verified 1.0.3 inventory to the existing shell through searchable
+class selection and inspectable ordered perk details. Keep raw source parameters
+separate from synthetic preview calculations and unverified formula semantics.
+
 ## Phase 3 — Calculation engine
 
 Implement framework-independent modifier ordering, totals, breakdowns, and

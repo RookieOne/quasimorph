@@ -2,25 +2,18 @@ import {
   Activity,
   AlertTriangle,
   Archive,
-  Boxes,
   ChevronRight,
   Crosshair,
   FlaskConical,
   Menu,
   Plus,
   Shield,
-  Sparkles,
   UserRound,
 } from 'lucide-react';
+import { useMemo, useRef, useState } from 'react';
+import { ClassSelectionDialog, PerkBrowser } from '@/components/class-perk-browser';
 import { Button } from '@/components/ui/button';
-import { classPerkDataset } from '@/game-data/class-perk-placeholder';
-
-const previewClass = classPerkDataset.classes[0];
-const previewPerks = previewClass.perkSlots.map(({ perkId }) => {
-  const perk = classPerkDataset.perks.find(({ id }) => id === perkId);
-  if (!perk) throw new Error(`Validated dataset is missing perk ${perkId}`);
-  return perk;
-});
+import { classPerkCatalog } from '@/game-data/class-perk-catalog';
 
 const attributes = [
   { label: 'Max health', value: '118', delta: '+18' },
@@ -50,14 +43,18 @@ function SelectionCard({
   title,
   detail,
   icon,
+  onClick,
+  buttonRef,
 }: {
   eyebrow: string;
   title: string;
   detail: string;
   icon: React.ReactNode;
+  onClick?: () => void;
+  buttonRef?: React.Ref<HTMLButtonElement>;
 }) {
   return (
-    <button className="selection-card" type="button">
+    <button className="selection-card" onClick={onClick} ref={buttonRef} type="button">
       <span className="selection-card__icon">{icon}</span>
       <span className="min-w-0 text-left">
         <span className="selection-card__eyebrow">{eyebrow}</span>
@@ -70,6 +67,27 @@ function SelectionCard({
 }
 
 export function App() {
+  const [selectedClassId, setSelectedClassId] = useState(classPerkCatalog.classes[0].id);
+  const [classDialogOpen, setClassDialogOpen] = useState(false);
+  const classButtonRef = useRef<HTMLButtonElement>(null);
+  const selectedClass =
+    classPerkCatalog.classes.find(({ id }) => id === selectedClassId) ??
+    classPerkCatalog.classes[0];
+
+  const selectedPerks = useMemo(
+    () =>
+      selectedClass.perkIds.map((perkId) => {
+        const perk = classPerkCatalog.perks.find(({ id }) => id === perkId);
+        if (!perk) throw new Error(`Validated catalog is missing perk ${perkId}`);
+        return perk;
+      }),
+    [selectedClass],
+  );
+
+  function closeClassDialog() {
+    setClassDialogOpen(false);
+  }
+
   return (
     <div className="min-h-screen bg-canvas text-ink">
       <header className="topbar">
@@ -125,16 +143,16 @@ export function App() {
         <aside className="coverage-notice" aria-label="Dataset coverage notice">
           <FlaskConical aria-hidden="true" />
           <div>
-            <strong>Placeholder dataset</strong>
+            <strong>Verified game inventory</strong>
             <span>
-              Synthetic fill-ins validate the data model. No displayed class or perk values are
-              verified game data.
+              Class and perk records come from game configuration. Raw parameter meanings and
+              calculation behavior remain unresolved.
             </span>
           </div>
           <span className="coverage-notice__tag">
-            {classPerkDataset.manifest.gameVersion} target ·{' '}
-            {classPerkDataset.manifest.coverage.classes.included} classes /{' '}
-            {classPerkDataset.manifest.coverage.perks.included} perks
+            {classPerkCatalog.manifest.gameVersion} · {classPerkCatalog.manifest.internalBuildId} ·{' '}
+            {classPerkCatalog.manifest.coverage.classes} classes /{' '}
+            {classPerkCatalog.manifest.coverage.perks} perks
           </span>
         </aside>
 
@@ -152,10 +170,12 @@ export function App() {
                 title="Isabella Capet"
               />
               <SelectionCard
-                detail={previewClass.description}
+                buttonRef={classButtonRef}
+                detail={`${selectedClass.perkIds.length} verified source-ordered perks`}
                 eyebrow="Class"
                 icon={<Crosshair />}
-                title={previewClass.name}
+                onClick={() => setClassDialogOpen(true)}
+                title={selectedClass.name}
               />
             </div>
 
@@ -202,7 +222,7 @@ export function App() {
               <div>
                 <span className="data-label">Mercenary profile</span>
                 <h3>Isabella Capet</h3>
-                <p>{previewClass.name} · Level 1 planning state</p>
+                <p>{selectedClass.name} · Level 1 planning state</p>
               </div>
             </div>
 
@@ -218,25 +238,17 @@ export function App() {
 
             <div className="panel-section">
               <div className="panel-section__heading">
-                <SectionLabel>Active traits</SectionLabel>
-                <button className="text-action" type="button">
-                  Inspect all <ChevronRight aria-hidden="true" />
-                </button>
+                <SectionLabel>Class perks</SectionLabel>
+                <span>Verified inventory</span>
               </div>
-              <div className="trait-list">
-                {previewPerks.map((perk, index) => (
-                  <span key={perk.id}>
-                    {index % 2 === 0 ? <Sparkles /> : <Boxes />} {perk.name}
-                  </span>
-                ))}
-              </div>
+              <PerkBrowser perks={selectedPerks} />
             </div>
           </section>
 
           <aside className="panel panel--results" aria-labelledby="results-title">
             <div className="panel-title-row">
               <div>
-                <SectionLabel>Calculated output</SectionLabel>
+                <SectionLabel>Synthetic preview output</SectionLabel>
                 <h2 id="results-title">Protection</h2>
               </div>
               <span className="result-count">04</span>
@@ -269,7 +281,8 @@ export function App() {
             </div>
 
             <p className="result-footnote">
-              Calculated totals will show base values, modifier order, and source evidence.
+              Preview values do not respond to class selection. Verified calculations will show base
+              values, modifier order, and source evidence in a later phase.
             </p>
           </aside>
         </div>
@@ -280,6 +293,18 @@ export function App() {
         <span>Not affiliated with Quasimorph's developers or publishers</span>
         <a href="https://github.com/RookieOne/quasimorph">Source on GitHub</a>
       </footer>
+
+      <ClassSelectionDialog
+        classes={classPerkCatalog.classes}
+        finalFocus={classButtonRef}
+        onClose={closeClassDialog}
+        onSelect={(classRecord) => {
+          setSelectedClassId(classRecord.id);
+          closeClassDialog();
+        }}
+        open={classDialogOpen}
+        selectedClassId={selectedClassId}
+      />
     </div>
   );
 }
