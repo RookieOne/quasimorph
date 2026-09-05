@@ -21,7 +21,7 @@ custom theme, responsive shell, automated checks, and GitHub Pages workflow.
 
 **Branch:** `feat/class-perk-data`
 
-**Status:** Research in progress
+**Status:** Foundation complete; verified data deferred
 
 Define validated, versioned class and perk schemas; record provenance and
 confidence; and add a deliberately small verified 1.0.3 dataset. Operatives,

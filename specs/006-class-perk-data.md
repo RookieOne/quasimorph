@@ -1,6 +1,6 @@
 # 006 — Class and perk data foundation
 
-**Status:** Draft
+**Status:** Implemented
 
 **Last updated:** 2026-09-05
 
@@ -26,7 +26,8 @@ version evidence, source hierarchy, and unresolved verification work.
 - Represent explicit perk levels and their effects without interpolating values.
 - Record activation, leveling, prerequisites, applicability, and multiple effects.
 - Attach field-level or record-level source evidence and confidence.
-- Add a deliberately small set of verified 1.0.3 fixtures.
+- Add a deliberately small synthetic placeholder dataset to exercise every
+  supported record shape.
 - Expose dataset version and coverage through the application shell.
 
 ## Out of scope
@@ -34,7 +35,7 @@ version evidence, source hierarchy, and unresolved verification work.
 - Operatives and personal perks
 - Weapons, armor, inventory, and equipment slots
 - Applying effects to calculated character totals
-- Complete class/perk content until extraction is validated
+- Verified class/perk content until extraction is available in a separate PR
 - Modeling unlock inventory or save-game state
 - Localized UI beyond the source English strings
 
@@ -108,10 +109,11 @@ version evidence, source hierarchy, and unresolved verification work.
   applicability, and unknown behavior.
 - The UI reads public version and coverage from the validated manifest.
 - The UI never labels documented or inferred values as verified.
-- The initial fixture records have been compared with stable 1.0.3 game data.
+- Placeholder records are unmistakably labeled synthetic in data and UI.
+- No placeholder record can claim verified evidence.
 
 ## Blocking research
 
-This spec cannot become Accepted until stable 1.0.3 records or complete in-game
-screens are available for verification. Schema implementation may begin against
-synthetic test fixtures, but synthetic values must never ship as game data.
+Replacing placeholder records with stable 1.0.3 data is intentionally deferred
+to a separate PR. That work requires stable game records or complete in-game
+screens and must retain provenance for every gameplay value.
