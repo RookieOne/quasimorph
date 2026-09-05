@@ -39,4 +39,3 @@ Describe unit, component, integration, visual, and manual checks as applicable.
 ## Open questions
 
 - Record unresolved decisions that prevent this spec from becoming accepted.
-

@@ -99,4 +99,3 @@ Build schema and dataset version are separate:
 
 Migration must be explicit and tested. Imported documents are validated before
 they are written to browser storage.
-

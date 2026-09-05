@@ -84,4 +84,3 @@ The first reusable components should include:
 - Interactive targets are comfortably operable by touch.
 - Motion is reduced when requested by the operating system.
 - Dense stat layouts retain meaningful reading and focus order.
-

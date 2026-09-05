@@ -51,4 +51,3 @@ A player who wants to answer questions such as:
 - Searchable item and perk database
 - Importing verified community-maintained datasets
 - Optional hosted synchronization if demand justifies a backend
-
