@@ -21,12 +21,13 @@ custom theme, responsive shell, automated checks, and GitHub Pages workflow.
 
 **Branch:** `feat/class-perk-data`
 
-**Status:** Foundation complete; verified data deferred
+**Status:** Foundation and verified inventory complete; effect mapping deferred
 
 Define validated, versioned class and perk schemas; record provenance and
-confidence; and add a deliberately small verified 1.0.3 dataset. Operatives,
-equipment, and unrelated game entities are deferred. No formulas should be
-guessed.
+confidence; retain the synthetic shape fixture; and extract the complete 1.0.3
+class/perk inventory. Mapping source parameters to calculation semantics is
+deferred so no formulas are guessed. Operatives, equipment, and unrelated game
+entities remain out of scope.
 
 ## Phase 3 — Calculation engine
 
