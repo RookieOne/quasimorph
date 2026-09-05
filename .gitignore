@@ -7,3 +7,6 @@ coverage/
 .env*
 !.env.example
 npm-debug.log*
+
+# Local Quasimorph installation and extracted game data
+/local-game-files/
