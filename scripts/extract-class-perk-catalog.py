@@ -12,15 +12,15 @@ import csv
 import hashlib
 import io
 import json
+from datetime import date
 from pathlib import Path
-
-import UnityPy
-
 
 GRADES = ("basic", "advanced", "master", "legend")
 
 
 def text_assets(resources_path: Path) -> dict[str, str]:
+    import UnityPy
+
     environment = UnityPy.load(str(resources_path))
     return {
         asset.m_Name: asset.m_Script
@@ -55,7 +55,10 @@ def parse_parameters(value: str) -> list[dict[str, object]]:
     result = []
     for key, raw_value in zip(tokens[::2], tokens[1::2], strict=True):
         if key.startswith("B"):
-            parsed: object = raw_value.lower() == "true"
+            normalized_value = raw_value.lower()
+            if normalized_value not in {"true", "false"}:
+                raise ValueError(f"Invalid boolean parameter {key}: {raw_value}")
+            parsed: object = normalized_value == "true"
         elif key.startswith("I"):
             parsed = int(raw_value)
         elif key.startswith("F"):
@@ -75,6 +78,8 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
+    import UnityPy
+
     parser = argparse.ArgumentParser()
     parser.add_argument("installation", type=Path)
     parser.add_argument("output", type=Path)
@@ -141,7 +146,7 @@ def main() -> None:
             "gameVersion": "1.0.3",
             "internalBuildId": player_settings.bundleVersion,
             "language": "en",
-            "capturedAt": "2026-09-05",
+            "capturedAt": date.today().isoformat(),
             "coverage": {"classes": len(classes), "perks": len(perks)},
             "source": {
                 "type": "game-config",

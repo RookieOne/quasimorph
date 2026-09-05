@@ -34,4 +34,11 @@ describe('verified class and perk catalog', () => {
 
     expect(() => parseClassPerkCatalog(invalid)).toThrow(/Invalid level chain/);
   });
+
+  it('rejects a non-final level without a progression threshold', () => {
+    const invalid = structuredClone(classPerkCatalog);
+    invalid.perks[0].levels[1].experienceToNextLevel = null;
+
+    expect(() => parseClassPerkCatalog(invalid)).toThrow(/Non-final level must advance/);
+  });
 });

@@ -90,6 +90,13 @@ export const classPerkCatalogSchema = z
             path: ['perks', perkIndex, 'levels', levelIndex],
           });
         }
+        if (levelIndex < 3 && level.experienceToNextLevel === null) {
+          context.addIssue({
+            code: 'custom',
+            message: `Non-final level must advance perk ${perk.id}`,
+            path: ['perks', perkIndex, 'levels', levelIndex, 'experienceToNextLevel'],
+          });
+        }
       });
       if (perk.levels.at(-1)?.experienceToNextLevel !== null) {
         context.addIssue({

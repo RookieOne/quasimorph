@@ -11,7 +11,7 @@
     "lint": "oxlint .",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
-    "test": "vitest run",
+    "test": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest scripts/test_extract_class_perk_catalog.py && vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
