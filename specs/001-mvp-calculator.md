@@ -76,4 +76,3 @@ These must be researched before the corresponding calculation is accepted:
 - Which equipment stats are intrinsic versus context-dependent?
 - How should conditional perks be represented and activated in a planned build?
 - Which statistics are valuable to calculate rather than merely display?
-

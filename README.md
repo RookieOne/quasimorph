@@ -9,9 +9,10 @@ in the browser and can be exported without requiring an account or backend.
 
 ## Project status
 
-The project is currently in the specification phase. Product and technical
+The application foundation is under active development. Product and technical
 decisions live in [`specs/`](./specs/README.md) and are treated as part of the
-source, not as separate project-management documents.
+source, not as separate project-management documents. The current sequence is
+tracked in [`specs/WIP-ROADMAP.md`](./specs/WIP-ROADMAP.md).
 
 ## Product principles
 
@@ -31,6 +32,28 @@ source, not as separate project-management documents.
 - Browser storage for saved builds
 - GitHub Actions and GitHub Pages
 
+## Local development
+
+Node.js 22 or newer is required.
+
+```sh
+npm install
+npm run dev
+```
+
+Before opening a pull request, run:
+
+```sh
+npm run format:check
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+Use `npm run build:pages` to reproduce the GitHub Pages build with the
+`/quasimorph/` repository base path.
+
 ## Development workflow
 
 Before implementing a feature:
@@ -49,4 +72,3 @@ See [`specs/README.md`](./specs/README.md) for the full process.
 This is an unofficial fan project and is not affiliated with, endorsed by, or
 sponsored by the developers or publishers of Quasimorph. Game names and related
 marks belong to their respective owners.
-

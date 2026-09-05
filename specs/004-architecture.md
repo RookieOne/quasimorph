@@ -68,4 +68,3 @@ Revisit a backend only when an accepted feature requires shared mutable state,
 such as accounts, cross-device synchronization, community publishing, ratings,
 comments, or collaborative editing. Public sharing alone should first be
 evaluated using a versioned URL encoding or downloadable build document.
-

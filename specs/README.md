@@ -16,6 +16,9 @@ whether a feature is complete.
   responsive behavior, accessibility, and Tailwind theme direction
 - [`004-architecture.md`](./004-architecture.md) — frontend architecture,
   persistence, testing, and deployment
+- [`005-application-foundation.md`](./005-application-foundation.md) — initial
+  application shell, theme, quality checks, and deployment foundation
+- [`WIP-ROADMAP.md`](./WIP-ROADMAP.md) — living sequence of planned pull requests
 - [`template.md`](./template.md) — starting point for new feature specs
 
 ## Spec-driven workflow
@@ -52,4 +55,3 @@ the game-data record. Use one of these confidence labels:
 
 Rules labeled `inferred` must be visible as such in developer-facing data.
 Rules labeled `unknown` must not silently affect calculator results.
-
