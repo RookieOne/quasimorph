@@ -14,7 +14,10 @@ describe('application foundation', () => {
     render(<App />);
 
     expect(screen.getByLabelText('Dataset coverage notice')).toHaveTextContent(
-      'Values shown here are representative only',
+      'Synthetic fill-ins validate the data model',
+    );
+    expect(screen.getByLabelText('Dataset coverage notice')).toHaveTextContent(
+      '1.0.3 target · 2 classes / 4 perks',
     );
   });
 });

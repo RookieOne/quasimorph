@@ -13,6 +13,14 @@ import {
   UserRound,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { classPerkDataset } from '@/game-data/class-perk-placeholder';
+
+const previewClass = classPerkDataset.classes[0];
+const previewPerks = previewClass.perkSlots.map(({ perkId }) => {
+  const perk = classPerkDataset.perks.find(({ id }) => id === perkId);
+  if (!perk) throw new Error(`Validated dataset is missing perk ${perkId}`);
+  return perk;
+});
 
 const attributes = [
   { label: 'Max health', value: '118', delta: '+18' },
@@ -117,12 +125,17 @@ export function App() {
         <aside className="coverage-notice" aria-label="Dataset coverage notice">
           <FlaskConical aria-hidden="true" />
           <div>
-            <strong>Interface preview</strong>
+            <strong>Placeholder dataset</strong>
             <span>
-              Values shown here are representative only. Verified game data arrives in Phase 2.
+              Synthetic fill-ins validate the data model. No displayed class or perk values are
+              verified game data.
             </span>
           </div>
-          <span className="coverage-notice__tag">Dataset 0.0</span>
+          <span className="coverage-notice__tag">
+            {classPerkDataset.manifest.gameVersion} target ·{' '}
+            {classPerkDataset.manifest.coverage.classes.included} classes /{' '}
+            {classPerkDataset.manifest.coverage.perks.included} perks
+          </span>
         </aside>
 
         <div className="calculator-grid">
@@ -139,10 +152,10 @@ export function App() {
                 title="Isabella Capet"
               />
               <SelectionCard
-                detail="Close-quarters specialist"
+                detail={previewClass.description}
                 eyebrow="Class"
                 icon={<Crosshair />}
-                title="Scout of Hades"
+                title={previewClass.name}
               />
             </div>
 
@@ -189,7 +202,7 @@ export function App() {
               <div>
                 <span className="data-label">Mercenary profile</span>
                 <h3>Isabella Capet</h3>
-                <p>Scout of Hades · Level 1 planning state</p>
+                <p>{previewClass.name} · Level 1 planning state</p>
               </div>
             </div>
 
@@ -211,15 +224,11 @@ export function App() {
                 </button>
               </div>
               <div className="trait-list">
-                <span>
-                  <Sparkles /> Acute hearing
-                </span>
-                <span>
-                  <Boxes /> Pack discipline
-                </span>
-                <span>
-                  <Crosshair /> Pistol training
-                </span>
+                {previewPerks.map((perk, index) => (
+                  <span key={perk.id}>
+                    {index % 2 === 0 ? <Sparkles /> : <Boxes />} {perk.name}
+                  </span>
+                ))}
               </div>
             </div>
           </section>
