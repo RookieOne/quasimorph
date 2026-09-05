@@ -5,7 +5,8 @@ from pathlib import Path
 
 SCRIPT_PATH = Path(__file__).with_name("extract-class-perk-catalog.py")
 SPEC = importlib.util.spec_from_file_location("extract_class_perk_catalog", SCRIPT_PATH)
-assert SPEC and SPEC.loader
+if SPEC is None or SPEC.loader is None:
+    raise RuntimeError(f"Unable to load extractor module from {SCRIPT_PATH}")
 MODULE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
 

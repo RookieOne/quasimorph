@@ -53,7 +53,7 @@ def parse_parameters(value: str) -> list[dict[str, object]]:
     if len(tokens) % 2:
         raise ValueError(f"Odd parameter token count: {value}")
     result = []
-    for key, raw_value in zip(tokens[::2], tokens[1::2], strict=True):
+    for key, raw_value in zip(tokens[::2], tokens[1::2]):
         if key.startswith("B"):
             normalized_value = raw_value.lower()
             if normalized_value not in {"true", "false"}:
