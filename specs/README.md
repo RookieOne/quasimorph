@@ -18,6 +18,10 @@ whether a feature is complete.
   persistence, testing, and deployment
 - [`005-application-foundation.md`](./005-application-foundation.md) — initial
   application shell, theme, quality checks, and deployment foundation
+- [`006-class-perk-data.md`](./006-class-perk-data.md) — versioned class and perk
+  records, evidence, validation, and initial dataset
+- [`research/class-perk-sources.md`](./research/class-perk-sources.md) — game
+  version and class/perk source assessment
 - [`WIP-ROADMAP.md`](./WIP-ROADMAP.md) — living sequence of planned pull requests
 - [`template.md`](./template.md) — starting point for new feature specs
 
