@@ -3,6 +3,8 @@
 A fan-made character build calculator for planning and comparing Quasimorph
 characters, classes, perks, and equipment.
 
+**Live site:** <https://rookieone.github.io/quasimorph/>
+
 The project is designed as a static, client-side web application built with
 React, TypeScript, Vite, and a customized Tailwind CSS theme. Builds are stored
 in the browser and can be exported without requiring an account or backend.
